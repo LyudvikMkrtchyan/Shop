@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o CMakeFiles/MyExecutable.dir/implement/dataBase.cpp.o CMakeFiles/MyExecutable.dir/implement/helperFunctions.cpp.o CMakeFiles/MyExecutable.dir/implement/main.cpp.o CMakeFiles/MyExecutable.dir/implement/network.cpp.o -o MyExecutable  -lmysqlcppconn 
