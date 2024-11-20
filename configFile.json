@@ -1,0 +1,5 @@
+{
+    "dataBaseHost" : "localhost",
+    "dataBasePort" : "9999",
+    "serverPort"   : 9091
+}

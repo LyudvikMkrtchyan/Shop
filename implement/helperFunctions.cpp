@@ -1,33 +1,50 @@
 #include "../includes/helperFunctions.hpp"
 
-
-
-
-
-#include <nlohmann/json_fwd.hpp>
-#include <sys/types.h>
-
-using request = boost::beast::http::request<boost::beast::http::string_body>;
-using response = boost::beast::http::response<boost::beast::http::string_body>; 
-using FunctionPtr = void(*)(const request&, response&, DataBase&);
-
-
-void login(const request &req, response &res, DataBase &db){
-    nlohmann::json json = nlohmann::json::parse(req.body());
-
-    nlohmann::json answerJson;
-    answerJson = db.login(json);
-
-    if(!answerJson.empty()){
-        res.result(boost::beast::http::status::ok);
-    }else{
-        res.result(boost::beast::http::status::unauthorized);
-    }
-    res.set(boost::beast::http::field::content_type, "application/json");
-    res.body() = answerJson.dump();
-    
-}
+template <typename Tp>
+using Uptr = std::unique_ptr<Tp>;
 
 void evantSwitchInitalaiz(EvantSwitch &evantsMap){
-   evantsMap.addEvant("/login", login);
+    usersEvantsInitalaizer(evantsMap);
+    bankEvantsInitalaizer(evantsMap);
+
+}
+
+nlohmann::json getConfig(){
+    nlohmann::json config;
+
+    std::ifstream configFile("../configFile.json");
+    if(!configFile.is_open()){
+        std::cout << "Erorr can not open config File" << std::endl;
+        exit(-1);
+    }
+
+    configFile >> config;
+    configFile.close();
+
+    if(!config.contains("dataBaseHost")){
+        std::cout << "Error database host empty" << std::endl;
+        exit(-1);
+    }
+    if(!config.contains("dataBasePort")){
+        std::cout << "Error database port empty" << std::endl;
+        exit(-1);
+
+    }
+    if(!config.contains("serverPort")){
+        std::cout << "Error server port empty" << std::endl;
+        exit(-1);
+    }
+
+    return config;
+}
+
+sql::Connection* connect(std::string login, std::string password, std::string dataBaseNaem, std::string dataBaseHost, std::string dataBasePort){
+    Uptr<sql::mysql::MySQL_Driver> driver(sql::mysql::get_driver_instance());
+    sql::Connection* connection;
+
+    std::string hostName = "tcp://" + dataBaseHost + ":" + dataBasePort;
+
+    connection = driver->connect(hostName, login, password);
+    connection->setSchema(dataBaseNaem);
+    return connection;
 }

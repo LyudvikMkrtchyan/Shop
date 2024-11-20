@@ -6,12 +6,15 @@
 #include <mysql_driver.h>
 #include <mysql_connection.h>
 #include <ctime>
-class DataBase{
+class BankTable{
 public:
-    DataBase(sql::Connection* );
-    nlohmann::json login(nlohmann::json& json);
+    BankTable(sql::Connection* );
+public:
+    bool addBankTransaction(nlohmann::json json);
+    bool updateBankTransaction(nlohmann::json json);
+    bool deleteBankTransaction(int id);
+    
 private:
     sql::Connection* connection;
 public:
 };
-sql::Connection* connect(std::string, std::string, std::string);

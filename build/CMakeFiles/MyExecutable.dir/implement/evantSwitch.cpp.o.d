@@ -2,7 +2,8 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /home/lyudvik/C++/Project/Shop/implement/evantSwitch.cpp \
  /usr/include/stdc-predef.h \
  /home/lyudvik/C++/Project/Shop/implement/../includes/evantSwitch.hpp \
- /home/lyudvik/C++/Project/Shop/implement/../includes/dataBase.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/dataBase.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/additationTable.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/12/algorithm \
  /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -345,29 +346,17 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/boost/core/detail/sp_thread_sleep.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
- /usr/include/boost/beast/http/status.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/bankTable.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/casheTable.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/transferTable.hpp \
+ /home/lyudvik/C++/Project/Shop/implement/../includes/./dataBaseClasses/usersTable.hpp \
+ /usr/include/boost/beast.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/core/ignore_unused.hpp \
  /usr/include/boost/static_assert.hpp \
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/preprocessor/cat.hpp \
  /usr/include/boost/preprocessor/config/config.hpp \
- /usr/include/boost/beast/core/string.hpp \
- /usr/include/boost/beast/core/string_type.hpp \
- /usr/include/boost/core/detail/string_view.hpp \
- /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/core/detail/is_same.hpp /usr/include/c++/12/climits \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/boost/beast/core/impl/string.ipp \
- /usr/include/boost/beast/core/detail/string.hpp \
- /usr/include/boost/beast/http/impl/status.ipp \
  /usr/include/boost/beast/core.hpp \
  /usr/include/boost/beast/core/async_base.hpp \
  /usr/include/boost/beast/core/detail/allocator.hpp \
@@ -384,6 +373,15 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/c++/12/boost/asio/detail/type_traits.hpp \
  /usr/include/c++/12/boost/asio/impl/cancellation_signal.ipp \
  /usr/include/c++/12/boost/asio/detail/thread_context.hpp \
+ /usr/include/c++/12/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/c++/12/boost/asio/detail/call_stack.hpp \
  /usr/include/c++/12/boost/asio/detail/noncopyable.hpp \
  /usr/include/c++/12/boost/asio/detail/tss_ptr.hpp \
@@ -612,6 +610,7 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/c++/12/boost/asio/impl/system_context.hpp \
  /usr/include/c++/12/boost/asio/impl/system_context.ipp \
  /usr/include/boost/optional.hpp /usr/include/boost/optional/optional.hpp \
+ /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/core/explicit_operator_bool.hpp \
  /usr/include/boost/core/invoke_swap.hpp \
  /usr/include/boost/optional/bad_optional_access.hpp \
@@ -1294,6 +1293,12 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/boost/io/detail/buffer_fill.hpp \
  /usr/include/boost/io/detail/ostream_guard.hpp \
  /usr/include/boost/utility/string_view_fwd.hpp \
+ /usr/include/boost/core/detail/string_view.hpp \
+ /usr/include/boost/core/detail/is_same.hpp \
+ /usr/include/boost/beast/core/string.hpp \
+ /usr/include/boost/beast/core/string_type.hpp \
+ /usr/include/boost/beast/core/impl/string.ipp \
+ /usr/include/boost/beast/core/detail/string.hpp \
  /usr/include/boost/beast/core/tcp_stream.hpp \
  /usr/include/c++/12/boost/asio/ip/tcp.hpp \
  /usr/include/c++/12/boost/asio/basic_socket_acceptor.hpp \
@@ -1370,6 +1375,8 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/boost/beast/http/detail/basic_parsed_list.hpp \
  /usr/include/boost/beast/http/impl/rfc7230.hpp \
  /usr/include/boost/beast/http/impl/rfc7230.ipp \
+ /usr/include/boost/beast/http/status.hpp \
+ /usr/include/boost/beast/http/impl/status.ipp \
  /usr/include/boost/beast/http/chunk_encode.hpp \
  /usr/include/boost/beast/http/type_traits.hpp \
  /usr/include/boost/beast/http/detail/type_traits.hpp \
@@ -1407,7 +1414,77 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /usr/include/boost/beast/http/vector_body.hpp \
  /usr/include/boost/beast/http/write.hpp \
  /usr/include/boost/beast/http/impl/write.hpp \
- /usr/include/c++/12/boost/asio.hpp \
+ /usr/include/boost/beast/version.hpp \
+ /usr/include/boost/beast/websocket.hpp \
+ /usr/include/boost/beast/websocket/error.hpp \
+ /usr/include/boost/beast/websocket/impl/error.hpp \
+ /usr/include/boost/beast/websocket/impl/error.ipp \
+ /usr/include/boost/beast/websocket/option.hpp \
+ /usr/include/boost/beast/websocket/rfc6455.hpp \
+ /usr/include/boost/beast/websocket/impl/rfc6455.hpp \
+ /usr/include/boost/beast/websocket/stream.hpp \
+ /usr/include/boost/beast/websocket/stream_base.hpp \
+ /usr/include/boost/beast/websocket/detail/decorator.hpp \
+ /usr/include/boost/beast/websocket/stream_fwd.hpp \
+ /usr/include/boost/beast/websocket/detail/hybi13.hpp \
+ /usr/include/boost/beast/core/detail/base64.hpp \
+ /usr/include/boost/beast/core/detail/base64.ipp \
+ /usr/include/boost/beast/websocket/detail/hybi13.ipp \
+ /usr/include/boost/beast/core/detail/sha1.hpp \
+ /usr/include/boost/beast/core/detail/sha1.ipp \
+ /usr/include/boost/beast/websocket/detail/prng.hpp \
+ /usr/include/c++/12/random /usr/include/c++/12/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
+ /usr/include/c++/12/bits/random.tcc \
+ /usr/include/boost/beast/websocket/detail/prng.ipp \
+ /usr/include/boost/beast/core/detail/chacha.hpp \
+ /usr/include/boost/beast/core/detail/pcg.hpp \
+ /usr/include/boost/beast/websocket/detail/impl_base.hpp \
+ /usr/include/boost/beast/websocket/detail/frame.hpp \
+ /usr/include/boost/beast/websocket/detail/utf8_checker.hpp \
+ /usr/include/boost/beast/websocket/detail/utf8_checker.ipp \
+ /usr/include/boost/endian/conversion.hpp \
+ /usr/include/boost/endian/detail/endian_reverse.hpp \
+ /usr/include/boost/endian/detail/integral_by_size.hpp \
+ /usr/include/boost/endian/detail/intrinsic.hpp \
+ /usr/include/boost/endian/detail/is_scoped_enum.hpp \
+ /usr/include/boost/endian/detail/is_integral.hpp \
+ /usr/include/boost/endian/detail/static_assert.hpp \
+ /usr/include/boost/endian/detail/endian_load.hpp \
+ /usr/include/boost/endian/detail/order.hpp \
+ /usr/include/boost/endian/detail/is_trivially_copyable.hpp \
+ /usr/include/boost/endian/detail/endian_store.hpp \
+ /usr/include/boost/beast/websocket/detail/pmd_extension.hpp \
+ /usr/include/boost/beast/websocket/detail/pmd_extension.ipp \
+ /usr/include/boost/beast/zlib/deflate_stream.hpp \
+ /usr/include/boost/beast/zlib/error.hpp \
+ /usr/include/boost/beast/zlib/impl/error.hpp \
+ /usr/include/boost/beast/zlib/impl/error.ipp \
+ /usr/include/boost/beast/zlib/zlib.hpp \
+ /usr/include/boost/beast/zlib/detail/deflate_stream.hpp \
+ /usr/include/boost/beast/zlib/detail/ranges.hpp \
+ /usr/include/boost/beast/zlib/detail/deflate_stream.ipp \
+ /usr/include/boost/beast/zlib/inflate_stream.hpp \
+ /usr/include/boost/beast/zlib/detail/inflate_stream.hpp \
+ /usr/include/boost/beast/zlib/detail/bitstream.hpp \
+ /usr/include/boost/beast/zlib/detail/window.hpp \
+ /usr/include/boost/beast/zlib/detail/inflate_stream.ipp \
+ /usr/include/boost/beast/websocket/impl/stream_impl.hpp \
+ /usr/include/boost/beast/websocket/detail/mask.hpp \
+ /usr/include/boost/beast/websocket/detail/mask.ipp \
+ /usr/include/boost/beast/websocket/detail/service.hpp \
+ /usr/include/boost/beast/core/detail/service_base.hpp \
+ /usr/include/boost/beast/websocket/detail/service.ipp \
+ /usr/include/boost/beast/websocket/detail/soft_mutex.hpp \
+ /usr/include/boost/beast/websocket/impl/accept.hpp \
+ /usr/include/boost/beast/websocket/detail/type_traits.hpp \
+ /usr/include/boost/beast/websocket/impl/close.hpp \
+ /usr/include/boost/beast/websocket/impl/handshake.hpp \
+ /usr/include/boost/beast/websocket/impl/ping.hpp \
+ /usr/include/boost/beast/websocket/impl/read.hpp \
+ /usr/include/boost/beast/websocket/impl/stream.hpp \
+ /usr/include/boost/beast/websocket/impl/write.hpp \
+ /usr/include/boost/beast/zlib.hpp /usr/include/c++/12/boost/asio.hpp \
  /usr/include/c++/12/boost/asio/any_completion_executor.hpp \
  /usr/include/c++/12/boost/asio/impl/any_completion_executor.ipp \
  /usr/include/c++/12/boost/asio/any_completion_handler.hpp \

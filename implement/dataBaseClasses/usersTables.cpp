@@ -1,19 +1,11 @@
-#include "../includes/dataBase.hpp"
+#include "../../includes/dataBaseClasses/usersTable.hpp"
 #include <cppconn/connection.h>
-#include <cppconn/resultset.h>
-#include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
-#include <memory>
-#include <mysql_connection.h>
-#include <mysql_driver.h>
-template <typename Tp>
-using Uptr = std::unique_ptr<Tp>;
 
-DataBase::DataBase(sql::Connection* conn):connection(conn){};
+UsersTable::UsersTable(sql::Connection* conn):connection(conn){};
 
-
-nlohmann::json DataBase::login(nlohmann::json& json){
-    nlohmann::json answerJson;
+nlohmann::json UsersTable::login(nlohmann::json& json){
+        nlohmann::json answerJson;
     
     std::string login;
     std::string password;
@@ -49,19 +41,3 @@ nlohmann::json DataBase::login(nlohmann::json& json){
 
     return answerJson;
 }
-
-
-sql::Connection* connect(std::string login, std::string password, std::string dataBaseNaem){
-    Uptr<sql::mysql::MySQL_Driver> driver(sql::mysql::get_driver_instance());
-    sql::Connection* connection;
-
-    connection = driver->connect("tcp://127.0.0.1:9999", login, password);
-    connection->setSchema(dataBaseNaem);
-    return connection;
-}
-
-
-    
-    
-
-
