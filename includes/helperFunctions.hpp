@@ -2,6 +2,9 @@
 
 #include "./evants/usersEvants.hpp"
 #include "./evants/bankEvants.hpp"
+#include "./evants/casheEvant.hpp"
+#include "./evants/transferEvants.hpp"
+#include "./evants/additationEvants.hpp"
 
 #include <boost/beast/http/status.hpp>
 #include <nlohmann/json_fwd.hpp>

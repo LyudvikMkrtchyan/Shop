@@ -7,8 +7,8 @@ std::string EvantSwitch::getCleanTarget(std::string_view target){
     std::string tmp;
     std::back_insert_iterator<std::string> ins(tmp);
    
-    std::string_view::iterator start = target.begin();
-    std::string_view::iterator end = target.end();
+    auto start = target.begin();
+    auto end = target.end();
    
 
     while(start != end && *start != '?'){
@@ -19,7 +19,8 @@ std::string EvantSwitch::getCleanTarget(std::string_view target){
 }
 
 FunctionPtr EvantSwitch::getEvantHendler(request& request){
-     std::string cleanTarget =  this->getCleanTarget(request.target());
+    
+    std::string cleanTarget =  this->getCleanTarget(std::string_view(request.target().data(),request.target().size()));
     std::cout << "clean target = "  << cleanTarget << std::endl;
 
     FunctionPtr functionPointer = nullptr;

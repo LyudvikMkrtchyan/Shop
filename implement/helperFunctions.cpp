@@ -4,9 +4,11 @@ template <typename Tp>
 using Uptr = std::unique_ptr<Tp>;
 
 void evantSwitchInitalaiz(EvantSwitch &evantsMap){
-    usersEvantsInitalaizer(evantsMap);
-    bankEvantsInitalaizer(evantsMap);
-
+    users_Evants_Initalaizer(evantsMap);
+    bank_Evants_Initalaizer(evantsMap);
+    cashe_Evants_Initalaizer(evantsMap);
+    transfer_Evants_Initalaizer(evantsMap);
+    additation_Evants_Initalaizer(evantsMap);
 }
 
 nlohmann::json getConfig(){

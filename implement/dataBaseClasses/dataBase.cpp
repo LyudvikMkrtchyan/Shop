@@ -12,7 +12,7 @@ using Uptr = std::unique_ptr<Tp>;
 
 DataBase::DataBase(sql::Connection* conn):AdditationTable(conn)
                                         , BankTable(conn)
-                                        , CashTable(conn)
+                                        , CasheTable(conn)
                                         , TransferTable(conn)
                                         , UsersTable(conn)
                                         , connection(conn){};

@@ -9,6 +9,10 @@
 class AdditationTable{
 public:
     AdditationTable(sql::Connection* );
+public:
+    bool add_Additation_Transaction(nlohmann::json json);
+    bool update_Additation_Transaction(nlohmann::json json);
+    bool delete_Additation_Transaction(nlohmann::json json);
     
 private:
     sql::Connection* connection;

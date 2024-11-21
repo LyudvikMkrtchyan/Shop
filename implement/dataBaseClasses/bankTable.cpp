@@ -7,7 +7,7 @@
 
     BankTable::BankTable(sql::Connection* conn):connection(conn){};
 
-    bool BankTable::addBankTransaction(nlohmann::json json){
+    bool BankTable::add_Bank_Transaction(nlohmann::json json){
         int expense = 0;
         int date    = 0; // I understand that the date cannot be an int, but this is the user's preference."
         std::string reasone;
@@ -45,7 +45,7 @@
 
     }
 
-    bool BankTable::updateBankTransaction(nlohmann::json json){
+    bool BankTable::update_Bank_Transaction(nlohmann::json json){
         int id = 0;
         int date = 0;
         int expense = 0;
@@ -89,7 +89,15 @@
         return ok;
     }
 
-    bool BankTable::deleteBankTransaction(int id){
+    bool BankTable::delete_Bank_Transaction(nlohmann::json json){
+
+        int id = 0;
+        if(json.contains("id")){
+            id = json["id"];
+        }else{
+            std::cout << "deleteBankTransaction id not found" << std::endl;
+            return false;
+        }
         std::unique_ptr<sql::PreparedStatement> pstmt(connection->prepareStatement(R"(
             DELETE FROM Bank
             WHERE id = ?
@@ -101,6 +109,3 @@
 
         return ok;
     }
-
-
-

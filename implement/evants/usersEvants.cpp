@@ -15,6 +15,6 @@ void login(const request &req, response &res, DataBase &db){
     res.body() = answerJson.dump();
 }
 
-void usersEvantsInitalaizer(EvantSwitch& evantSwitch){
+void users_Evants_Initalaizer(EvantSwitch& evantSwitch){
     evantSwitch.addEvant("/login", login);
 }

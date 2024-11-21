@@ -17,7 +17,7 @@
 #include <boost/beast.hpp>
 class DataBase:public AdditationTable
               ,public BankTable
-              ,public CashTable
+              ,public CasheTable
               ,public TransferTable
               ,public UsersTable  
                 {

@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/implement/evants/additationEvants.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/implement/evants/bankEvants.cpp.o"
   "CMakeFiles/MyExecutable.dir/implement/evants/bankEvants.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/implement/evants/casheEvants.cpp.o"
+  "CMakeFiles/MyExecutable.dir/implement/evants/casheEvants.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/implement/evants/complexEvants.cpp.o"
   "CMakeFiles/MyExecutable.dir/implement/evants/complexEvants.cpp.o.d"
   "CMakeFiles/MyExecutable.dir/implement/evants/transferEvants.cpp.o"

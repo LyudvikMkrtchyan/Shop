@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyudvik/C++/Project/Shop
+CMAKE_SOURCE_DIR = /home/tigran/Shop_Project_1/Shop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyudvik/C++/Project/Shop/build
+CMAKE_BINARY_DIR = /home/tigran/Shop_Project_1/Shop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop/build/CMakeFiles /home/lyudvik/C++/Project/Shop/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tigran/Shop_Project_1/Shop/build/CMakeFiles /home/tigran/Shop_Project_1/Shop/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tigran/Shop_Project_1/Shop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -345,6 +345,30 @@ implement/evants/bankEvants.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/bankEvants.cpp.s
 .PHONY : implement/evants/bankEvants.cpp.s
 
+implement/evants/casheEvants.o: implement/evants/casheEvants.cpp.o
+.PHONY : implement/evants/casheEvants.o
+
+# target to build an object file
+implement/evants/casheEvants.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/casheEvants.cpp.o
+.PHONY : implement/evants/casheEvants.cpp.o
+
+implement/evants/casheEvants.i: implement/evants/casheEvants.cpp.i
+.PHONY : implement/evants/casheEvants.i
+
+# target to preprocess a source file
+implement/evants/casheEvants.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/casheEvants.cpp.i
+.PHONY : implement/evants/casheEvants.cpp.i
+
+implement/evants/casheEvants.s: implement/evants/casheEvants.cpp.s
+.PHONY : implement/evants/casheEvants.s
+
+# target to generate assembly for a file
+implement/evants/casheEvants.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/casheEvants.cpp.s
+.PHONY : implement/evants/casheEvants.cpp.s
+
 implement/evants/complexEvants.o: implement/evants/complexEvants.cpp.o
 .PHONY : implement/evants/complexEvants.o
 
@@ -525,6 +549,9 @@ help:
 	@echo "... implement/evants/bankEvants.o"
 	@echo "... implement/evants/bankEvants.i"
 	@echo "... implement/evants/bankEvants.s"
+	@echo "... implement/evants/casheEvants.o"
+	@echo "... implement/evants/casheEvants.i"
+	@echo "... implement/evants/casheEvants.s"
 	@echo "... implement/evants/complexEvants.o"
 	@echo "... implement/evants/complexEvants.i"
 	@echo "... implement/evants/complexEvants.s"

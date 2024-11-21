@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/additationTable.cpp.o: \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/additationTable.cpp \
+ /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/additationTable.cpp \
  /usr/include/stdc-predef.h \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/additationTable.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/additationTable.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/12/algorithm \
  /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -291,7 +291,6 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/additationTable.cpp.o: \
  /usr/include/cppconn/resultset.h /usr/include/mysql_driver.h \
  /usr/include/boost/scoped_ptr.hpp \
  /usr/include/boost/smart_ptr/scoped_ptr.hpp \
- /usr/include/boost/smart_ptr/detail/requires_cxx11.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
@@ -309,9 +308,8 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/additationTable.cpp.o: \
  /usr/include/boost/config/detail/posix_features.hpp \
  /usr/include/boost/config/detail/suffix.hpp \
  /usr/include/boost/config/helper_macros.hpp \
- /usr/include/boost/config/detail/cxx_composite.hpp \
- /usr/include/boost/config/pragma_message.hpp \
- /usr/include/boost/assert.hpp /usr/include/boost/core/checked_delete.hpp \
+ /usr/include/boost/assert.hpp /usr/include/boost/checked_delete.hpp \
+ /usr/include/boost/core/checked_delete.hpp \
  /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
  /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
  /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
@@ -331,16 +329,18 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/additationTable.cpp.o: \
  /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
  /usr/include/boost/core/addressof.hpp \
  /usr/include/boost/throw_exception.hpp \
- /usr/include/boost/exception/exception.hpp \
  /usr/include/boost/assert/source_location.hpp \
+ /usr/include/boost/current_function.hpp \
+ /usr/include/boost/exception/exception.hpp \
  /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
  /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
  /usr/include/boost/smart_ptr/detail/spinlock.hpp \
  /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
  /usr/include/boost/smart_ptr/detail/yield_k.hpp \
- /usr/include/boost/core/yield_primitives.hpp \
- /usr/include/boost/core/detail/sp_thread_pause.hpp \
- /usr/include/boost/core/detail/sp_thread_yield.hpp \
- /usr/include/boost/core/detail/sp_thread_sleep.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
+ /usr/include/boost/config/pragma_message.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
- /usr/include/boost/smart_ptr/detail/local_counted_base.hpp
+ /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/include/cppconn/prepared_statement.h \
+ /usr/include/cppconn/statement.h

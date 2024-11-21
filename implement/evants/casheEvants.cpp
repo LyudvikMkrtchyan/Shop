@@ -1,10 +1,10 @@
 #include "../../includes/evants/bankEvants.hpp"
 
-void add_Bank_Transaction(const request &req, response &res, DataBase &db){
+void add_Cashe_Transaction(const request &req, response &res, DataBase &db){
      nlohmann::json json = nlohmann::json::parse(req.body());
 
    
-    bool ok = db.add_Bank_Transaction(json);
+    bool ok = db.add_Cashe_Transaction(json);
 
     if(ok){
         res.result(boost::beast::http::status::ok);
@@ -14,11 +14,11 @@ void add_Bank_Transaction(const request &req, response &res, DataBase &db){
    
 };
 
-void update_Bank_Transaction(const request &req, response &res, DataBase &db){
+void update_Cashe_Transaction(const request &req, response &res, DataBase &db){
     nlohmann::json json = nlohmann::json::parse(req.body());
 
    
-    bool ok = db.update_Bank_Transaction(json);
+    bool ok = db.update_Cashe_Transaction(json);
 
     if(ok){
         res.result(boost::beast::http::status::ok);
@@ -28,10 +28,10 @@ void update_Bank_Transaction(const request &req, response &res, DataBase &db){
 }
 
 
-void delete_Bank_Transaction(const request &req, response &res, DataBase &db){
+void delete_Cashe_Transaction(const request &req, response &res, DataBase &db){
     nlohmann::json json = nlohmann::json::parse(req.body());
     
-    bool ok = db.delete_Bank_Transaction(json);
+    bool ok = db.delete_Cashe_Transaction(json);
 
     if(ok){
         res.result(boost::beast::http::status::ok);
@@ -43,9 +43,9 @@ void delete_Bank_Transaction(const request &req, response &res, DataBase &db){
 
 
 
-void bank_Evants_Initalaizer(EvantSwitch& evantSwitch){
-    evantSwitch.addEvant("/add_Bank_Transaction", add_Bank_Transaction);
-    evantSwitch.addEvant("/update_Bank_Transaction", update_Bank_Transaction);
-    evantSwitch.addEvant("/delete_Bank_Transaction", delete_Bank_Transaction);
+void cashe_Evants_Initalaizer(EvantSwitch& evantSwitch){
+    evantSwitch.addEvant("/add_Cashe_Transaction", add_Cashe_Transaction);
+    evantSwitch.addEvant("/update_Cashe_Transaction", update_Cashe_Transaction);
+    evantSwitch.addEvant("/delete_Cashe_Transaction", delete_Cashe_Transaction);
 
 }

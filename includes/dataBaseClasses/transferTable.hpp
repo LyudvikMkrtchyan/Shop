@@ -9,6 +9,10 @@
 class TransferTable{
 public:
     TransferTable(sql::Connection* );
+public:
+    bool add_Transfer_Transaction(nlohmann::json json);
+    bool update_Transfer_Transaction(nlohmann::json json);
+    bool delete_Transfer_Transaction(nlohmann::json json);
     
 private:
     sql::Connection* connection;

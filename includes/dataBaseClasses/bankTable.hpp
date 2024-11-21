@@ -10,9 +10,9 @@ class BankTable{
 public:
     BankTable(sql::Connection* );
 public:
-    bool addBankTransaction(nlohmann::json json);
-    bool updateBankTransaction(nlohmann::json json);
-    bool deleteBankTransaction(int id);
+    bool add_Bank_Transaction(nlohmann::json json);
+    bool update_Bank_Transaction(nlohmann::json json);
+    bool delete_Bank_Transaction(nlohmann::json json);
     
 private:
     sql::Connection* connection;
