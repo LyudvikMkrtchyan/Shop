@@ -12,6 +12,7 @@ set(SOURCES
     ./implement/dataBaseClasses/dataBase.cpp
     ./implement/dataBaseClasses/transferTable.cpp
     ./implement/dataBaseClasses/usersTables.cpp
+    ./implement/dataBaseClasses/complex.cpp
 
     ./implement/evants/additationEvants.cpp
     ./implement/evants/bankEvants.cpp

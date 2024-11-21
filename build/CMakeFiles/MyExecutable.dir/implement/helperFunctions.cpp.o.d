@@ -349,6 +349,7 @@ CMakeFiles/MyExecutable.dir/implement/helperFunctions.cpp.o: \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/casheTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/transferTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/usersTable.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/complex.hpp \
  /usr/include/boost/beast.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/core/ignore_unused.hpp \
@@ -1706,9 +1707,10 @@ CMakeFiles/MyExecutable.dir/implement/helperFunctions.cpp.o: \
  /usr/include/boost/asio/impl/write_at.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/usersEvants.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/bankEvants.hpp \
- /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/casheEvant.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/casheEvants.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/transferEvants.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/additationEvants.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/../includes/./evants/complexEvants.hpp \
  /usr/include/c++/12/fstream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \

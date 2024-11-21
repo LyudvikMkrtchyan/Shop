@@ -12,7 +12,7 @@ int main(){
     nlohmann::json config = getConfig();
 
     std::string dataBaseHost = config["dataBaseHost"];
-    std::string dataBasePort       = config["dataBasePort"];
+    std::string dataBasePort = config["dataBasePort"];
     short serverPort         = config["serverPort"];
 
     sql::Connection* conn = connect("atlass", "123456", "Shop", dataBaseHost, dataBasePort);

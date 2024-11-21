@@ -347,6 +347,7 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/dataBase.cpp.o: \
  /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/casheTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/transferTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/usersTable.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/complex.hpp \
  /usr/include/boost/beast.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/core/ignore_unused.hpp \

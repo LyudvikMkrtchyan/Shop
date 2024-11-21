@@ -6,13 +6,11 @@
 #include <mysql_driver.h>
 #include <mysql_connection.h>
 #include <ctime>
-class AdditationTable{
+class Complex{
 public:
-    AdditationTable(sql::Connection* );
+    Complex(sql::Connection* );
 public:
-    bool add_Additation_Transaction(nlohmann::json json);
-    bool update_Additation_Transaction(nlohmann::json json);
-    bool delete_Additation_Transaction(nlohmann::json json);
+    nlohmann::json complex(nlohmann::json &json);    
 private:
     sql::Connection* connection;
 public:

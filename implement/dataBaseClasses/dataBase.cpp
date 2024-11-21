@@ -15,6 +15,7 @@ DataBase::DataBase(sql::Connection* conn):AdditationTable(conn)
                                         , CasheTable(conn)
                                         , TransferTable(conn)
                                         , UsersTable(conn)
+                                        , Complex(conn)
                                         , connection(conn){};
 
 

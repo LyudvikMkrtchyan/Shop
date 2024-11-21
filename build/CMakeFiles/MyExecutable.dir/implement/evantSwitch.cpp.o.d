@@ -348,6 +348,7 @@ CMakeFiles/MyExecutable.dir/implement/evantSwitch.cpp.o: \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/casheTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/transferTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/usersTable.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/../includes/./dataBaseClasses/complex.hpp \
  /usr/include/boost/beast.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/core/ignore_unused.hpp \

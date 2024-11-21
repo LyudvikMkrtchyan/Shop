@@ -4,6 +4,7 @@
 #include "casheTable.hpp"
 #include "transferTable.hpp"
 #include "usersTable.hpp"
+#include "complex.hpp"
 
 
 #include <nlohmann/json.hpp>
@@ -19,6 +20,7 @@ class DataBase:public AdditationTable
               ,public BankTable
               ,public CasheTable
               ,public TransferTable
+              ,public Complex
               ,public UsersTable  
                 {
 public:

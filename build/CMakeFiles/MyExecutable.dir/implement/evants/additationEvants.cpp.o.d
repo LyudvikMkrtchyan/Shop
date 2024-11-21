@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/implement/evants/additationEvants.cpp.o: \
  /home/tigran/Shop_Project_1/Shop/implement/evants/additationEvants.cpp \
  /usr/include/stdc-predef.h \
- /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/bankEvants.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/additationEvants.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/dataBase.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/additationTable.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/12/algorithm \
@@ -348,6 +348,7 @@ CMakeFiles/MyExecutable.dir/implement/evants/additationEvants.cpp.o: \
  /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/casheTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/transferTable.hpp \
  /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/usersTable.hpp \
+ /home/tigran/Shop_Project_1/Shop/implement/evants/../../includes/evants/../dataBaseClasses/complex.hpp \
  /usr/include/boost/beast.hpp \
  /usr/include/boost/beast/core/detail/config.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/core/ignore_unused.hpp \

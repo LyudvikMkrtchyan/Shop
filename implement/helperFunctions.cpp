@@ -9,6 +9,7 @@ void evantSwitchInitalaiz(EvantSwitch &evantsMap){
     cashe_Evants_Initalaizer(evantsMap);
     transfer_Evants_Initalaizer(evantsMap);
     additation_Evants_Initalaizer(evantsMap);
+    complex_Evants_Initalaizer(evantsMap);
 }
 
 nlohmann::json getConfig(){

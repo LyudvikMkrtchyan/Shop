@@ -19,8 +19,10 @@ void session(boost::asio::ip::tcp::socket socket, DataBase& db){
 
       boost::beast::http::request<boost::beast::http::string_body> req;
       boost::beast::http::read(socket, buffer, req);
-         std::cout << "session" << std::endl;
-    boost::beast::http::response<boost::beast::http::string_body> res;
+      
+      std::cout << "session" << std::endl;
+      
+      boost::beast::http::response<boost::beast::http::string_body> res;
      if (req.method() == boost::beast::http::verb::options) {
         res.result(boost::beast::http::status::no_content);
         res.set(boost::beast::http::field::access_control_allow_origin, "*"); // или укажите конкретные источники
