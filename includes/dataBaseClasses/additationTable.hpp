@@ -9,7 +9,6 @@
 class AdditationTable{
 public:
     AdditationTable(sql::Connection* );
-    
 private:
     sql::Connection* connection;
 public:
