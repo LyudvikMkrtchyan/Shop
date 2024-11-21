@@ -6,5 +6,4 @@ using FunctionPtr = void(*)(const request&, response&, DataBase&);
 
 void login(const request &req, response &res, DataBase &db);
 
-
 void usersEvantsInitalaizer(EvantSwitch& evantSwitch);
