@@ -1,3 +1,0 @@
-/home/lyudvik/C++/Project/Shop/build/CMakeFiles/MyExecutable.dir
-/home/lyudvik/C++/Project/Shop/build/CMakeFiles/edit_cache.dir
-/home/lyudvik/C++/Project/Shop/build/CMakeFiles/rebuild_cache.dir
