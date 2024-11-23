@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lyudvik/C++/Project/Shop
+CMAKE_SOURCE_DIR = /home/lyudvik/C++/Project/Shop2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lyudvik/C++/Project/Shop/build
+CMAKE_BINARY_DIR = /home/lyudvik/C++/Project/Shop2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop/build/CMakeFiles /home/lyudvik/C++/Project/Shop/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop2/build/CMakeFiles /home/lyudvik/C++/Project/Shop2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyudvik/C++/Project/Shop2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,6 +225,30 @@ implement/dataBaseClasses/dataBase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/dataBase.cpp.s
 .PHONY : implement/dataBaseClasses/dataBase.cpp.s
 
+implement/dataBaseClasses/helperClass.o: implement/dataBaseClasses/helperClass.cpp.o
+.PHONY : implement/dataBaseClasses/helperClass.o
+
+# target to build an object file
+implement/dataBaseClasses/helperClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/helperClass.cpp.o
+.PHONY : implement/dataBaseClasses/helperClass.cpp.o
+
+implement/dataBaseClasses/helperClass.i: implement/dataBaseClasses/helperClass.cpp.i
+.PHONY : implement/dataBaseClasses/helperClass.i
+
+# target to preprocess a source file
+implement/dataBaseClasses/helperClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/helperClass.cpp.i
+.PHONY : implement/dataBaseClasses/helperClass.cpp.i
+
+implement/dataBaseClasses/helperClass.s: implement/dataBaseClasses/helperClass.cpp.s
+.PHONY : implement/dataBaseClasses/helperClass.s
+
+# target to generate assembly for a file
+implement/dataBaseClasses/helperClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/helperClass.cpp.s
+.PHONY : implement/dataBaseClasses/helperClass.cpp.s
+
 implement/dataBaseClasses/transferTable.o: implement/dataBaseClasses/transferTable.cpp.o
 .PHONY : implement/dataBaseClasses/transferTable.o
 
@@ -344,6 +368,30 @@ implement/evants/bankEvants.s: implement/evants/bankEvants.cpp.s
 implement/evants/bankEvants.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/bankEvants.cpp.s
 .PHONY : implement/evants/bankEvants.cpp.s
+
+implement/evants/cashEvants.o: implement/evants/cashEvants.cpp.o
+.PHONY : implement/evants/cashEvants.o
+
+# target to build an object file
+implement/evants/cashEvants.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/cashEvants.cpp.o
+.PHONY : implement/evants/cashEvants.cpp.o
+
+implement/evants/cashEvants.i: implement/evants/cashEvants.cpp.i
+.PHONY : implement/evants/cashEvants.i
+
+# target to preprocess a source file
+implement/evants/cashEvants.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/cashEvants.cpp.i
+.PHONY : implement/evants/cashEvants.cpp.i
+
+implement/evants/cashEvants.s: implement/evants/cashEvants.cpp.s
+.PHONY : implement/evants/cashEvants.s
+
+# target to generate assembly for a file
+implement/evants/cashEvants.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/implement/evants/cashEvants.cpp.s
+.PHONY : implement/evants/cashEvants.cpp.s
 
 implement/evants/complexEvants.o: implement/evants/complexEvants.cpp.o
 .PHONY : implement/evants/complexEvants.o
@@ -510,6 +558,9 @@ help:
 	@echo "... implement/dataBaseClasses/dataBase.o"
 	@echo "... implement/dataBaseClasses/dataBase.i"
 	@echo "... implement/dataBaseClasses/dataBase.s"
+	@echo "... implement/dataBaseClasses/helperClass.o"
+	@echo "... implement/dataBaseClasses/helperClass.i"
+	@echo "... implement/dataBaseClasses/helperClass.s"
 	@echo "... implement/dataBaseClasses/transferTable.o"
 	@echo "... implement/dataBaseClasses/transferTable.i"
 	@echo "... implement/dataBaseClasses/transferTable.s"
@@ -525,6 +576,9 @@ help:
 	@echo "... implement/evants/bankEvants.o"
 	@echo "... implement/evants/bankEvants.i"
 	@echo "... implement/evants/bankEvants.s"
+	@echo "... implement/evants/cashEvants.o"
+	@echo "... implement/evants/cashEvants.i"
+	@echo "... implement/evants/cashEvants.s"
 	@echo "... implement/evants/complexEvants.o"
 	@echo "... implement/evants/complexEvants.i"
 	@echo "... implement/evants/complexEvants.s"

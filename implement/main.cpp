@@ -4,13 +4,12 @@
 #include <boost/asio/io_context.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <thread>
-
 EvantSwitch evantSwitch;
 
 int main(){
     evantSwitchInitalaiz(evantSwitch);
     nlohmann::json config = getConfig();
-
+    
     std::string dataBaseHost = config["dataBaseHost"];
     std::string dataBasePort       = config["dataBasePort"];
     short serverPort         = config["serverPort"];

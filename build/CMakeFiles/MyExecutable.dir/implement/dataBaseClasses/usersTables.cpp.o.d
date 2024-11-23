@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/usersTables.cpp.o: \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/usersTables.cpp \
+ /home/lyudvik/C++/Project/Shop2/implement/dataBaseClasses/usersTables.cpp \
  /usr/include/stdc-predef.h \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/usersTable.hpp \
+ /home/lyudvik/C++/Project/Shop2/implement/dataBaseClasses/../../includes/dataBaseClasses/usersTable.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/12/algorithm \
  /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \

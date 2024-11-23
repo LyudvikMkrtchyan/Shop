@@ -1,7 +1,7 @@
-CMakeFiles/MyExecutable.dir/implement/evants/additationEvants.cpp.o: \
- /home/lyudvik/C++/Project/Shop2/implement/evants/additationEvants.cpp \
+CMakeFiles/MyExecutable.dir/implement/evants/cashEvants.cpp.o: \
+ /home/lyudvik/C++/Project/Shop2/implement/evants/cashEvants.cpp \
  /usr/include/stdc-predef.h \
- /home/lyudvik/C++/Project/Shop2/implement/evants/../../includes/evants/additationEvants.hpp \
+ /home/lyudvik/C++/Project/Shop2/implement/evants/../../includes/evants/cashEvants.hpp \
  /home/lyudvik/C++/Project/Shop2/implement/evants/../../includes/evants/../dataBaseClasses/dataBase.hpp \
  /home/lyudvik/C++/Project/Shop2/implement/evants/../../includes/evants/../dataBaseClasses/additationTable.hpp \
  /home/lyudvik/C++/Project/Shop2/implement/evants/../../includes/evants/../dataBaseClasses/helperClass.hpp \

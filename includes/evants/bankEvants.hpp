@@ -6,6 +6,8 @@ using FunctionPtr = void(*)(const request&, response&, DataBase&);
 
 void addBankTransaction(const request &req, response &res, DataBase &db);
 void updateBankTransaction(const request &req, response &res, DataBase &db);
+void getBankTransactionsByInterval(const request &req, response &res, DataBase &db);
+void deleteBankTransaction(const request &req, response &res, DataBase &db);
 
 
 void bankEvantsInitalaizer(EvantSwitch& evantSwitch);

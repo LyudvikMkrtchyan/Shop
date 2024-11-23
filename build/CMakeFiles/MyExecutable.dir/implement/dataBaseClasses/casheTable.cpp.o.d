@@ -1,7 +1,7 @@
 CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/casheTable.cpp.o: \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/casheTable.cpp \
+ /home/lyudvik/C++/Project/Shop2/implement/dataBaseClasses/casheTable.cpp \
  /usr/include/stdc-predef.h \
- /home/lyudvik/C++/Project/Shop/implement/dataBaseClasses/../../includes/dataBaseClasses/casheTable.hpp \
+ /home/lyudvik/C++/Project/Shop2/implement/dataBaseClasses/../../includes/dataBaseClasses/casheTable.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/12/algorithm \
  /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -280,6 +280,7 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/casheTable.cpp.o: \
  /usr/include/nlohmann/ordered_map.hpp /usr/include/c++/12/any \
  /usr/include/nlohmann/detail/macro_unscope.hpp \
  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /home/lyudvik/C++/Project/Shop2/implement/dataBaseClasses/../../includes/dataBaseClasses/helperClass.hpp \
  /usr/include/cppconn/connection.h /usr/include/cppconn/build_config.h \
  /usr/include/cppconn/warning.h /usr/include/cppconn/sqlstring.h \
  /usr/include/c++/12/iostream /usr/include/cppconn/variant.h \
@@ -343,4 +344,6 @@ CMakeFiles/MyExecutable.dir/implement/dataBaseClasses/casheTable.cpp.o: \
  /usr/include/boost/core/detail/sp_thread_yield.hpp \
  /usr/include/boost/core/detail/sp_thread_sleep.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
- /usr/include/boost/smart_ptr/detail/local_counted_base.hpp
+ /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/include/cppconn/prepared_statement.h \
+ /usr/include/cppconn/statement.h

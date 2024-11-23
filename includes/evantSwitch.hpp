@@ -4,7 +4,6 @@
 #include <string>
 #include <boost/beast/http/status.hpp>
 #include <nlohmann/json_fwd.hpp>
-#include <string_view>
 #include <string>
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
@@ -22,7 +21,7 @@ public:
     void addEvant(std::string EvantName, FunctionPtr);
     FunctionPtr getEvantHendler(request& request);
 private:
-    std::string getCleanTarget(std::string_view target);
+    std::string getCleanTarget(std::string target);
 private:
     std::map<std::string, FunctionPtr> evantsMap;
 };

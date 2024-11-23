@@ -1,11 +1,15 @@
 #include "../includes/helperFunctions.hpp"
-
+#include <fstream>
 template <typename Tp>
 using Uptr = std::unique_ptr<Tp>;
 
 void evantSwitchInitalaiz(EvantSwitch &evantsMap){
     usersEvantsInitalaizer(evantsMap);
     bankEvantsInitalaizer(evantsMap);
+    cashEvantsInitalaizer(evantsMap);
+    transferEvantsInitalaizer(evantsMap);
+    additationEvantsInitalaizer(evantsMap);
+    complexEvantsInitalaizer(evantsMap);
 
 }
 

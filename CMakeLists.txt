@@ -9,9 +9,10 @@ set(SOURCES
     ./implement/dataBaseClasses/dataBase.cpp
     ./implement/dataBaseClasses/transferTable.cpp
     ./implement/dataBaseClasses/usersTables.cpp
+    ./implement/dataBaseClasses/helperClass.cpp
 
     ./implement/evants/additationEvants.cpp
-    ./implement/evants/bankEvants.cpp
+    ./implement/evants/cashEvants.cpp
     ./implement/evants/bankEvants.cpp
     ./implement/evants/complexEvants.cpp
     ./implement/evants/transferEvants.cpp
